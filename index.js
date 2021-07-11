@@ -10,3 +10,15 @@ function log(array) {
 }
 log([1,2,3,4]);
 log([1,2,3,4,5,6,7,8,9,10]);
+
+// Linear runtime
+// Big ) Notation: "0 (n)"
+function logAll(array){
+  for (var i = 0; i < array.length; i++) {
+    console.log([i])
+  }
+}
+
+logAll([1,2,3,4]);
+logAll([1,2,3,4,5,6]);
+logAll([1,2,3,4,5,6,7]);
