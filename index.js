@@ -22,3 +22,18 @@ function logAll(array){
 logAll([1,2,3,4]);
 logAll([1,2,3,4,5,6]);
 logAll([1,2,3,4,5,6,7]);
+
+// Exponential runtime
+// Big ) Notation: "0 (n^2)"
+
+function addAndLog(array){
+  for (var i = 0; i < array.length; i++) {
+    for (var j = 0; j < array.length; j++){
+      console.log(array[i] + array[j]);
+    }
+  }
+}
+
+addAndLog(['A', 'B', 'C'])
+addAndLog(['A', 'B', 'C', 'D'])
+addAndLog(['A', 'B', 'C', 'D', 'E'])
